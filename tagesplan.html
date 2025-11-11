@@ -600,7 +600,7 @@
                     <div class="branch-filter">
                         <label for="branchSelect">Branche:</label>
                         <select id="branchSelect" onchange="window.filterByBranch(); return false;">
-                            <option value="">Alle Branchen</option><option value="Elektromonteur">Elektromonteur</option><option value="Servicetechniker">Servicetechniker</option>
+                            <option value="">Alle Branchen</option><option value="Elektro">Elektro</option><option value="HLS">HLS</option><option value="Nibe">Nibe</option>
                         </select>
                     </div>
                 </div>
@@ -610,22 +610,242 @@
                 <table class="schedule-table" id="scheduleTable">
                     <thead>
                         <tr>
-                            <th>Zeit</th><th class="employee-column" data-branch="Elektromonteur">Dieter Müller</th><th class="employee-column" data-branch="Servicetechniker">Kurt Krechel</th>
+                            <th>Zeit</th><th class="employee-column" data-branch="Elektro">Alexander Müller</th><th class="employee-column" data-branch="Elektro">Arnd Welling</th><th class="employee-column" data-branch="Elektro">Björn Widerstein</th><th class="employee-column" data-branch="Nibe">Burkhard Schüller</th><th class="employee-column" data-branch="Elektro">Christopher Gondorf</th><th class="employee-column" data-branch="HLS">Dennis Ihle</th><th class="employee-column" data-branch="Nibe">Dieter Müller</th><th class="employee-column" data-branch="Elektro">Emanuel Przesang</th><th class="employee-column" data-branch="Elektro">Felix Brühne</th><th class="employee-column" data-branch="Elektro">Jens Schommer</th><th class="employee-column" data-branch="Elektro">Johannes Langenfeld</th><th class="employee-column" data-branch="Elektro">Karl Hansen</th><th class="employee-column" data-branch="Elektro">Khaled Khalil </th><th class="employee-column" data-branch="Nibe">Kurt Krechel</th><th class="employee-column" data-branch="HLS">Leon Zündorf</th><th class="employee-column" data-branch="Elektro">Lukas Wagner</th><th class="employee-column" data-branch="Elektro">Manuel Michels</th><th class="employee-column" data-branch="Elektro">Marius Nolden</th><th class="employee-column" data-branch="HLS">Max Hermeling</th><th class="employee-column" data-branch="Elektro">Max Klein</th><th class="employee-column" data-branch="HLS">Nico Bodemir</th><th class="employee-column" data-branch="Elektro">Nico Hank</th><th class="employee-column" data-branch="Elektro">Nico Kunz</th><th class="employee-column" data-branch="Elektro">Niklas Wild</th><th class="employee-column" data-branch="HLS">Philip Theisen</th><th class="employee-column" data-branch="Elektro">Robin Ortner</th><th class="employee-column" data-branch="Elektro">Robin-Luca Stechert</th><th class="employee-column" data-branch="HLS">Thomas Reitz</th><th class="employee-column" data-branch="HLS">Thomas Schmidt</th><th class="employee-column" data-branch="HLS">Thomas Schäfer</th><th class="employee-column" data-branch="Elektro">Vladislav Mamonov</th><th class="employee-column" data-branch="">WP Montageteam 1</th>
                         </tr>
                     </thead>
-                    <tbody id="scheduleTableBody"><tr><td class="time-cell">06:30</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">07:00</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">07:30</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">08:00</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">08:30</td><td class="appointment-cell employee-column" data-branch="Elektromonteur" data-modal-id="modal_EBD0E2E4_EB08_487C_9993_789CF0E95DFB" rowspan="4" onclick="window.showModalById('modal_EBD0E2E4_EB08_487C_9993_789CF0E95DFB'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_EBD0E2E4_EB08_487C_9993_789CF0E95DFB'); return false;">
+                    <tbody id="scheduleTableBody"><tr><td class="time-cell">06:30</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch=""></td></tr><tr><td class="time-cell">07:00</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch=""></td></tr><tr><td class="time-cell">07:30</td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_0391EA56_4D02_4D46_89C1_BC577CF5F3AE" rowspan="20" onclick="window.showModalById('modal_0391EA56_4D02_4D46_89C1_BC577CF5F3AE'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_0391EA56_4D02_4D46_89C1_BC577CF5F3AE'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Wagener</div>
+                        <div class="location">Leienkaul</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_B90C7F9A_DA9B_402B_B46E_949E4F95CACC" rowspan="20" onclick="window.showModalById('modal_B90C7F9A_DA9B_402B_B46E_949E4F95CACC'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_B90C7F9A_DA9B_402B_B46E_949E4F95CACC'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">GST</div>
+                        <div class="location">Kottenheim</div>
+                        <div class="detailed-short">Anhänger</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_E329C935_03D6_4F86_A341_C2FE96929595" rowspan="7" onclick="window.showModalById('modal_E329C935_03D6_4F86_A341_C2FE96929595'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_E329C935_03D6_4F86_A341_C2FE96929595'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-11:00</div>
+                        <div class="description">455092 Keiffenheim / Schneider Boos</div>
+                        <div class="location">Boos, Römerweg 3</div>
+                        <div class="detailed-short">Schneider in Boos, Römerweg 3
+PV Anlage in Betrieb nehmen</div>
+                    </div>
+                </td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_38A7F0E3_513A_4377_BC19_EAD0917CE659" rowspan="14" onclick="window.showModalById('modal_38A7F0E3_513A_4377_BC19_EAD0917CE659'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_38A7F0E3_513A_4377_BC19_EAD0917CE659'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-14:30</div>
+                        <div class="description">Zeitzem</div>
+                        <div class="location">Welling</div>
+                        <div class="detailed-short">Verbindungskabel
+Muffen ....
+Kabeleinführung</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_3ECD9B33_33D2_453A_B92C_971D49FF015D" rowspan="20" onclick="window.showModalById('modal_3ECD9B33_33D2_453A_B92C_971D49FF015D'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_3ECD9B33_33D2_453A_B92C_971D49FF015D'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Markovic</div>
+                        <div class="location">Boos</div>
+                        
+                    </div>
+                </td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_B90C7F9A_DA9B_402B_B46E_949E4F95CACC" rowspan="20" onclick="window.showModalById('modal_B90C7F9A_DA9B_402B_B46E_949E4F95CACC'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_B90C7F9A_DA9B_402B_B46E_949E4F95CACC'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">GST</div>
+                        <div class="location">Kottenheim</div>
+                        <div class="detailed-short">Anhänger</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_A05793F0_9D67_4545_A919_12B9621030D8" rowspan="20" onclick="window.showModalById('modal_A05793F0_9D67_4545_A919_12B9621030D8'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_A05793F0_9D67_4545_A919_12B9621030D8'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Kraus Jürgen</div>
+                        <div class="location">Hambach</div>
+                        <div class="detailed-short">S2125-16
+VVM320
+Zählerschrank 2ZP in HZG Raum
+FI/Sicherungen und Rangierkanal aus Lager mitnehmen
+</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_373271D1_694A_48E9_BC85_C24B3EB44CAF" rowspan="20" onclick="window.showModalById('modal_373271D1_694A_48E9_BC85_C24B3EB44CAF'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_373271D1_694A_48E9_BC85_C24B3EB44CAF'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Daniels</div>
+                        <div class="location">Köln</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_8B7B72E6_0865_4D62_BDCB_F057ECD32FA9" rowspan="20" onclick="window.showModalById('modal_8B7B72E6_0865_4D62_BDCB_F057ECD32FA9'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_8B7B72E6_0865_4D62_BDCB_F057ECD32FA9'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Rückbau Wasser und Strom T13</div>
+                        <div class="location">Nürburgring</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_38A7F0E3_513A_4377_BC19_EAD0917CE659" rowspan="14" onclick="window.showModalById('modal_38A7F0E3_513A_4377_BC19_EAD0917CE659'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_38A7F0E3_513A_4377_BC19_EAD0917CE659'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-14:30</div>
+                        <div class="description">Zeitzem</div>
+                        <div class="location">Welling</div>
+                        <div class="detailed-short">Verbindungskabel
+Muffen ....
+Kabeleinführung</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_04E905A2_E22D_4DC0_9161_1D2171B72574" rowspan="11" onclick="window.showModalById('modal_04E905A2_E22D_4DC0_9161_1D2171B72574'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_04E905A2_E22D_4DC0_9161_1D2171B72574'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-13:00</div>
+                        <div class="description">GST</div>
+                        <div class="location">Kottenheim</div>
+                        <div class="detailed-short">Wallboxen</div>
+                    </div>
+                </td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_5F671811_E031_4E0E_BB63_B1529CE1BAD0" rowspan="20" onclick="window.showModalById('modal_5F671811_E031_4E0E_BB63_B1529CE1BAD0'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_5F671811_E031_4E0E_BB63_B1529CE1BAD0'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Kraus</div>
+                        <div class="location">Hambach</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_75348D96_042E_48C6_A47F_C24DB52E2964" rowspan="20" onclick="window.showModalById('modal_75348D96_042E_48C6_A47F_C24DB52E2964'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_75348D96_042E_48C6_A47F_C24DB52E2964'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Kirche </div>
+                        <div class="location">Monreal</div>
+                        <div class="detailed-short">WIS kommt ab ca. 10Uhr dazu</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_37572F64_BD92_4B55_8EA3_79C9776AB895" rowspan="20" onclick="window.showModalById('modal_37572F64_BD92_4B55_8EA3_79C9776AB895'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_37572F64_BD92_4B55_8EA3_79C9776AB895'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Pohl</div>
+                        <div class="location">Hellenthal</div>
+                        <div class="detailed-short">Austausch Sole</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_AF3B0293_A79E_40C2_BB93_0ECF047EE99F" rowspan="20" onclick="window.showModalById('modal_AF3B0293_A79E_40C2_BB93_0ECF047EE99F'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_AF3B0293_A79E_40C2_BB93_0ECF047EE99F'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Nolden Elektro P465802</div>
+                        <div class="location">Polch</div>
+                        <div class="detailed-short">E-Check und Geräteprüfung
+Niessmann</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_62052506_9E0D_4642_9B4B_BE8DF418FA99" rowspan="20" onclick="window.showModalById('modal_62052506_9E0D_4642_9B4B_BE8DF418FA99'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_62052506_9E0D_4642_9B4B_BE8DF418FA99'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Markovic</div>
+                        <div class="location">Boos</div>
+                        <div class="detailed-short">Schlüssel mitnehmen!!</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_A05793F0_9D67_4545_A919_12B9621030D8" rowspan="20" onclick="window.showModalById('modal_A05793F0_9D67_4545_A919_12B9621030D8'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_A05793F0_9D67_4545_A919_12B9621030D8'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Kraus Jürgen</div>
+                        <div class="location">Hambach</div>
+                        <div class="detailed-short">S2125-16
+VVM320
+Zählerschrank 2ZP in HZG Raum
+FI/Sicherungen und Rangierkanal aus Lager mitnehmen
+</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_3ECD9B33_33D2_453A_B92C_971D49FF015D" rowspan="20" onclick="window.showModalById('modal_3ECD9B33_33D2_453A_B92C_971D49FF015D'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_3ECD9B33_33D2_453A_B92C_971D49FF015D'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Markovic</div>
+                        <div class="location">Boos</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_3231CC3C_A8A1_419B_9BE9_CAEE48F62C56" rowspan="20" onclick="window.showModalById('modal_3231CC3C_A8A1_419B_9BE9_CAEE48F62C56'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_3231CC3C_A8A1_419B_9BE9_CAEE48F62C56'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Kirche </div>
+                        <div class="location">Monreal</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_3231CC3C_A8A1_419B_9BE9_CAEE48F62C56" rowspan="20" onclick="window.showModalById('modal_3231CC3C_A8A1_419B_9BE9_CAEE48F62C56'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_3231CC3C_A8A1_419B_9BE9_CAEE48F62C56'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Kirche </div>
+                        <div class="location">Monreal</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_0391EA56_4D02_4D46_89C1_BC577CF5F3AE" rowspan="20" onclick="window.showModalById('modal_0391EA56_4D02_4D46_89C1_BC577CF5F3AE'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_0391EA56_4D02_4D46_89C1_BC577CF5F3AE'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Wagener</div>
+                        <div class="location">Leienkaul</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_C713327F_AC59_423F_9A00_37FFF9B33939" rowspan="20" onclick="window.showModalById('modal_C713327F_AC59_423F_9A00_37FFF9B33939'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_C713327F_AC59_423F_9A00_37FFF9B33939'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Pohl</div>
+                        <div class="location">Hellenthal</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_37572F64_BD92_4B55_8EA3_79C9776AB895" rowspan="20" onclick="window.showModalById('modal_37572F64_BD92_4B55_8EA3_79C9776AB895'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_37572F64_BD92_4B55_8EA3_79C9776AB895'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Pohl</div>
+                        <div class="location">Hellenthal</div>
+                        <div class="detailed-short">Austausch Sole</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_8B7B72E6_0865_4D62_BDCB_F057ECD32FA9" rowspan="20" onclick="window.showModalById('modal_8B7B72E6_0865_4D62_BDCB_F057ECD32FA9'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_8B7B72E6_0865_4D62_BDCB_F057ECD32FA9'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Rückbau Wasser und Strom T13</div>
+                        <div class="location">Nürburgring</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_9013CD6C_40E3_4C2F_9266_9A97DCACA30F" rowspan="4" onclick="window.showModalById('modal_9013CD6C_40E3_4C2F_9266_9A97DCACA30F'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_9013CD6C_40E3_4C2F_9266_9A97DCACA30F'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-09:30</div>
+                        <div class="description">Rollmann</div>
+                        <div class="location">Plaidt</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_396D385A_8F0E_4F37_85A4_BBE18C444A4B" rowspan="20" onclick="window.showModalById('modal_396D385A_8F0E_4F37_85A4_BBE18C444A4B'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_396D385A_8F0E_4F37_85A4_BBE18C444A4B'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Bouhs</div>
+                        <div class="location">Boos</div>
+                        
+                    </div>
+                </td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_01FE3D84_1FA2_4B2F_9806_C31BCE8DE4D1" rowspan="20" onclick="window.showModalById('modal_01FE3D84_1FA2_4B2F_9806_C31BCE8DE4D1'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_01FE3D84_1FA2_4B2F_9806_C31BCE8DE4D1'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:15</div>
+                        <div class="description">Nolden Elektro P465802</div>
+                        <div class="location">Polch</div>
+                        <div class="detailed-short">E-Check und Geräteprüfung
+Niessmann</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="" data-modal-id="modal_C2BECE19_8333_4B8D_B375_A8B0549D4DD7" rowspan="20" onclick="window.showModalById('modal_C2BECE19_8333_4B8D_B375_A8B0549D4DD7'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_C2BECE19_8333_4B8D_B375_A8B0549D4DD7'); return false;">
+                    <div class="appointment">
+                        <div class="time">07:30-17:30</div>
+                        <div class="description">Projekt 465333 Kraus Gerhard, Hambach</div>
+                        <div class="location">65582 Hambach Am Bienengarten 2</div>
+                        
+                    </div>
+                </td></tr><tr><td class="time-cell">08:00</td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td></tr><tr><td class="time-cell">08:30</td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_EBD0E2E4_EB08_487C_9993_789CF0E95DFB" rowspan="4" onclick="window.showModalById('modal_EBD0E2E4_EB08_487C_9993_789CF0E95DFB'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_EBD0E2E4_EB08_487C_9993_789CF0E95DFB'); return false;">
                     <div class="appointment">
                         <div class="time">08:30-10:30</div>
-                        <div class="description">Block   Sieberg Peter / Kunden-Nr. 13218</div>
-                        <div class="location"></div>
-                        <div class="detailed-short">WP 1
+                        <div class="description">Sieberg Peter und Claudia Miethaus</div>
+                        <div class="location">53359 Rheinbach-Flerzheim Konrad Adenauer Str. 7a</div>
+                        <div class="detailed-short">Nibe Wärmepumpen mit Emmy (Nr: 208088)
 
-per Tel best.(L)
+Tel. best. (L)
 wurde auf eventuelle Verschiebungen hingewiesen</div>
                     </div>
-                </td><td class="appointment-cell employee-column" data-branch="Servicetechniker" data-modal-id="modal_AA2209CF_6044_44AC_AF29_24E42A9457AD" rowspan="4" onclick="window.showModalById('modal_AA2209CF_6044_44AC_AF29_24E42A9457AD'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_AA2209CF_6044_44AC_AF29_24E42A9457AD'); return false;">
+                </td></tr><tr><td class="time-cell">09:00</td><td class="appointment-cell employee-column" data-branch="Nibe" data-modal-id="modal_952A9900_4C2C_4457_BFC8_D237CA0DC7BF" rowspan="5" onclick="window.showModalById('modal_952A9900_4C2C_4457_BFC8_D237CA0DC7BF'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_952A9900_4C2C_4457_BFC8_D237CA0DC7BF'); return false;">
                     <div class="appointment">
-                        <div class="time">08:30-10:30</div>
+                        <div class="time">09:00-11:30</div>
+                        <div class="description">Filusch Angelika, Hövels</div>
+                        <div class="location">57537 Hövels Zum Siegblick 7</div>
+                        <div class="detailed-short">Nibe Wärmepumpen mit Emmy (Nr: 209406)
++ Lüftung im Schlafzimmer macht Geräusche
+Filtertausch</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Nibe" data-modal-id="modal_AA2209CF_6044_44AC_AF29_24E42A9457AD" rowspan="4" onclick="window.showModalById('modal_AA2209CF_6044_44AC_AF29_24E42A9457AD'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_AA2209CF_6044_44AC_AF29_24E42A9457AD'); return false;">
+                    <div class="appointment">
+                        <div class="time">09:00-11:00</div>
                         <div class="description">Weber Edith, Sponheim</div>
                         <div class="location">55595 Sponheim Gräfin-Loretta-Straße 12</div>
                         <div class="detailed-short">Nibe Wärmepumpen mit Emmy (Nr: 208505)
@@ -634,17 +854,148 @@ Wunschtermin, Fix 06.02 Marc
 2x verschoben (Notfall, krank)
 Mail best. (L)</div>
                     </div>
-                </td></tr><tr><td class="time-cell">09:00</td></tr><tr><td class="time-cell">09:30</td></tr><tr><td class="time-cell">10:00</td></tr><tr><td class="time-cell">10:30</td><td class="appointment-cell employee-column" data-branch="Elektromonteur" data-modal-id="modal_1C2F4A4C_865E_43C3_AEF7_EF01498F1C43" rowspan="4" onclick="window.showModalById('modal_1C2F4A4C_865E_43C3_AEF7_EF01498F1C43'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_1C2F4A4C_865E_43C3_AEF7_EF01498F1C43'); return false;">
+                </td><td class="appointment-cell employee-column" data-branch="Nibe" data-modal-id="modal_8CE9FF3A_0B51_4802_9596_12B549035A94" rowspan="5" onclick="window.showModalById('modal_8CE9FF3A_0B51_4802_9596_12B549035A94'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_8CE9FF3A_0B51_4802_9596_12B549035A94'); return false;">
+                    <div class="appointment">
+                        <div class="time">09:00-11:30</div>
+                        <div class="description">Kröger Inge u. Dirk, Hennef</div>
+                        <div class="location">53773  Hennef Im Baumgarten 48</div>
+                        <div class="detailed-short">Nibe 
+
+Ers. auf Kommi 
+Mail best. </div>
+                    </div>
+                </td></tr><tr><td class="time-cell">09:30</td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_9121B1A9_18D4_4D8D_867F_568D5A66BC7D" rowspan="4" onclick="window.showModalById('modal_9121B1A9_18D4_4D8D_867F_568D5A66BC7D'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_9121B1A9_18D4_4D8D_867F_568D5A66BC7D'); return false;">
+                    <div class="appointment">
+                        <div class="time">09:30-11:30</div>
+                        <div class="description">Keiffenheim Josi</div>
+                        <div class="location"></div>
+                        <div class="detailed-short">01712677575
+
+WMZ + HK überprüfen</div>
+                    </div>
+                </td></tr><tr><td class="time-cell">10:00</td></tr><tr><td class="time-cell">10:30</td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_1C2F4A4C_865E_43C3_AEF7_EF01498F1C43" rowspan="4" onclick="window.showModalById('modal_1C2F4A4C_865E_43C3_AEF7_EF01498F1C43'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_1C2F4A4C_865E_43C3_AEF7_EF01498F1C43'); return false;">
                     <div class="appointment">
                         <div class="time">10:30-12:30</div>
-                        <div class="description">Block   Sieberg Peter / Kunden-Nr. 13218</div>
-                        <div class="location"></div>
-                        <div class="detailed-short">WP 2
+                        <div class="description">Sieberg Peter und Claudia</div>
+                        <div class="location">53359 Rheinbach-Flerzheim Konrad Adenauer Str. 7a</div>
+                        <div class="detailed-short">Nibe Wärmepumpen mit Emmy (Nr: 208088)
 
-per Tel best.(L)
+Tel. best. (L)
 wurde auf eventuelle Verschiebungen hingewiesen</div>
                     </div>
-                </td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">11:00</td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">11:30</td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">12:00</td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">12:30</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">13:00</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">13:30</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">14:00</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">14:30</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">15:00</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">15:30</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">16:00</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">16:30</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">17:00</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">17:30</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">18:00</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr><tr><td class="time-cell">18:30</td><td class="empty-cell employee-column" data-branch="Elektromonteur"></td><td class="empty-cell employee-column" data-branch="Servicetechniker"></td></tr>
+                </td></tr><tr><td class="time-cell">11:00</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="appointment-cell employee-column" data-branch="Nibe" data-modal-id="modal_20E768B0_F50F_4D29_A166_A6E9F7CF8B0D" rowspan="2" onclick="window.showModalById('modal_20E768B0_F50F_4D29_A166_A6E9F7CF8B0D'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_20E768B0_F50F_4D29_A166_A6E9F7CF8B0D'); return false;">
+                    <div class="appointment">
+                        <div class="time">11:00-12:00</div>
+                        <div class="description">Becker Lucas, Allenfeld</div>
+                        <div class="location">55595 Allenfeld Auf dem Dillenberg 30</div>
+                        <div class="detailed-short">Nibe Wärmepumpen mit Emmy (Nr: 208580)
+
+Mail best.</div>
+                    </div>
+                </td></tr><tr><td class="time-cell">11:30</td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_F95FA511_64B4_4AB8_8D7D_B9A4590439B3" rowspan="6" onclick="window.showModalById('modal_F95FA511_64B4_4AB8_8D7D_B9A4590439B3'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_F95FA511_64B4_4AB8_8D7D_B9A4590439B3'); return false;">
+                    <div class="appointment">
+                        <div class="time">11:30-14:30</div>
+                        <div class="description">425489 Krankenhaus Mayen</div>
+                        <div class="location">Mayen Block A</div>
+                        <div class="detailed-short">Gehwegs Beleuchtung Block A
+Ein Kabel muss eventuell verlängert werden.</div>
+                    </div>
+                </td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td></tr><tr><td class="time-cell">12:00</td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_3427CCA4_C0B2_4B8B_926E_94781655033D" rowspan="4" onclick="window.showModalById('modal_3427CCA4_C0B2_4B8B_926E_94781655033D'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_3427CCA4_C0B2_4B8B_926E_94781655033D'); return false;">
+                    <div class="appointment">
+                        <div class="time">12:00-14:00</div>
+                        <div class="description">Dörner</div>
+                        <div class="location">Kürrenberg</div>
+                        <div class="detailed-short">IBN
+Auftrag hat Thomas bereis</div>
+                    </div>
+                </td></tr><tr><td class="time-cell">12:30</td><td class="appointment-cell employee-column" data-branch="Nibe" data-modal-id="modal_5B8BC4EC_1A4F_41E3_819E_3D52F9DD5D4B" rowspan="4" onclick="window.showModalById('modal_5B8BC4EC_1A4F_41E3_819E_3D52F9DD5D4B'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_5B8BC4EC_1A4F_41E3_819E_3D52F9DD5D4B'); return false;">
+                    <div class="appointment">
+                        <div class="time">12:30-14:30</div>
+                        <div class="description">Klohe Carsten, Neustadt</div>
+                        <div class="location">53577 Neustadt Heuweg 20</div>
+                        <div class="detailed-short">Nibe 
+/05.11.25/dw
+Schlüsselbox, neben der Garage lins seitenwand:
+2406 - &gt; Keller 1. Tür Rechts HWR
+12-13 Uhr</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Nibe" data-modal-id="modal_F57A0F84_2843_4D1C_AF25_70DB1FB40185" rowspan="6" onclick="window.showModalById('modal_F57A0F84_2843_4D1C_AF25_70DB1FB40185'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_F57A0F84_2843_4D1C_AF25_70DB1FB40185'); return false;">
+                    <div class="appointment">
+                        <div class="time">12:30-15:30</div>
+                        <div class="description">Stein Frederic und Michaela, Nieder-Olm</div>
+                        <div class="location">55268 Nieder Olm Leherweg 2</div>
+                        <div class="detailed-short">Nibe Split / KG (Nr: 200839)
+Termin tel.vereinbart / 06.11.25/dw
++ Kälteiso mitnehmen, Erneuerung Außendämmung</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_4D88448D_24EA_4DEB_853A_A08D1FFA191D" rowspan="10" onclick="window.showModalById('modal_4D88448D_24EA_4DEB_853A_A08D1FFA191D'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_4D88448D_24EA_4DEB_853A_A08D1FFA191D'); return false;">
+                    <div class="appointment">
+                        <div class="time">12:30-17:15</div>
+                        <div class="description">445442 Thyssenkrupp Bilstein GmbH</div>
+                        <div class="location">53520  Meuspath August-Bilstein-Rondell 1</div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Nibe" data-modal-id="modal_D25956CC_E5AD_44F5_AE18_1354F3202BE8" rowspan="7" onclick="window.showModalById('modal_D25956CC_E5AD_44F5_AE18_1354F3202BE8'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_D25956CC_E5AD_44F5_AE18_1354F3202BE8'); return false;">
+                    <div class="appointment">
+                        <div class="time">12:30-16:00</div>
+                        <div class="description">Beils Thomas</div>
+                        <div class="location">50767 Köln Orrer Weg 61</div>
+                        <div class="detailed-short">Nibe 
+Mail best.
+
+Div. Ers. gem Angebot auf Kommi / Verm. nur Display</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_4D88448D_24EA_4DEB_853A_A08D1FFA191D" rowspan="10" onclick="window.showModalById('modal_4D88448D_24EA_4DEB_853A_A08D1FFA191D'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_4D88448D_24EA_4DEB_853A_A08D1FFA191D'); return false;">
+                    <div class="appointment">
+                        <div class="time">12:30-17:15</div>
+                        <div class="description">445442 Thyssenkrupp Bilstein GmbH</div>
+                        <div class="location">53520  Meuspath August-Bilstein-Rondell 1</div>
+                        
+                    </div>
+                </td><td class="empty-cell employee-column" data-branch="HLS"></td></tr><tr><td class="time-cell">13:00</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td></tr><tr><td class="time-cell">13:30</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_ADE57B07_482B_4A5D_96D5_993BDE70EF74" rowspan="4" onclick="window.showModalById('modal_ADE57B07_482B_4A5D_96D5_993BDE70EF74'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_ADE57B07_482B_4A5D_96D5_993BDE70EF74'); return false;">
+                    <div class="appointment">
+                        <div class="time">13:30-15:30</div>
+                        <div class="description">Buchholz Amelie &amp; Bertram Martin, Dernau</div>
+                        <div class="location">53507 Dernau Bungertstraße 26</div>
+                        <div class="detailed-short">Nibe Wärmepumpen mit Emmy (Nr: 209557)</div>
+                    </div>
+                </td></tr><tr><td class="time-cell">14:00</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="appointment-cell employee-column" data-branch="HLS" data-modal-id="modal_A51DD8BF_C8A8_4951_803A_99A364A587AA" rowspan="2" onclick="window.showModalById('modal_A51DD8BF_C8A8_4951_803A_99A364A587AA'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_A51DD8BF_C8A8_4951_803A_99A364A587AA'); return false;">
+                    <div class="appointment">
+                        <div class="time">14:00-15:00</div>
+                        <div class="description">425118 Steffens Matthias Luxem</div>
+                        <div class="location">56729 Luxem Im Suhr 8</div>
+                        
+                    </div>
+                </td></tr><tr><td class="time-cell">14:30</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_8F376522_ADE0_4210_9D86_8C291B35ECA9" rowspan="6" onclick="window.showModalById('modal_8F376522_ADE0_4210_9D86_8C291B35ECA9'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_8F376522_ADE0_4210_9D86_8C291B35ECA9'); return false;">
+                    <div class="appointment">
+                        <div class="time">14:30-17:30</div>
+                        <div class="description">GST</div>
+                        <div class="location">Kottenheim</div>
+                        <div class="detailed-short">Wallboxen</div>
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_8F376522_ADE0_4210_9D86_8C291B35ECA9" rowspan="6" onclick="window.showModalById('modal_8F376522_ADE0_4210_9D86_8C291B35ECA9'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_8F376522_ADE0_4210_9D86_8C291B35ECA9'); return false;">
+                    <div class="appointment">
+                        <div class="time">14:30-17:30</div>
+                        <div class="description">GST</div>
+                        <div class="location">Kottenheim</div>
+                        <div class="detailed-short">Wallboxen</div>
+                    </div>
+                </td><td class="empty-cell employee-column" data-branch="Elektro"></td></tr><tr><td class="time-cell">15:00</td><td class="appointment-cell employee-column" data-branch="Elektro" data-modal-id="modal_C7EDADA7_9627_4B45_8467_679ED60B9F8D" rowspan="4" onclick="window.showModalById('modal_C7EDADA7_9627_4B45_8467_679ED60B9F8D'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_C7EDADA7_9627_4B45_8467_679ED60B9F8D'); return false;">
+                    <div class="appointment">
+                        <div class="time">15:00-17:00</div>
+                        <div class="description">Protokolle</div>
+                        <div class="location"></div>
+                        
+                    </div>
+                </td><td class="appointment-cell employee-column" data-branch="Nibe" data-modal-id="modal_9903F030_039D_419F_ACBD_2C1A267A0019" rowspan="3" onclick="window.showModalById('modal_9903F030_039D_419F_ACBD_2C1A267A0019'); return false;" ontouchend="event.preventDefault(); window.showModalById('modal_9903F030_039D_419F_ACBD_2C1A267A0019'); return false;">
+                    <div class="appointment">
+                        <div class="time">15:00-16:30</div>
+                        <div class="description">Simon Michael, Monreal</div>
+                        <div class="location">56729 Monreal Am Hochkreuz 25</div>
+                        <div class="detailed-short">Nibe Wärmepumpen mit Emmy (Nr: 207220)
+Termin tel. bestätigt/ 07.11.25/dw</div>
+                    </div>
+                </td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td></tr><tr><td class="time-cell">15:30</td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td></tr><tr><td class="time-cell">16:00</td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td></tr><tr><td class="time-cell">16:30</td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td></tr><tr><td class="time-cell">17:00</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td></tr><tr><td class="time-cell">17:30</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch=""></td></tr><tr><td class="time-cell">18:00</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch=""></td></tr><tr><td class="time-cell">18:30</td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Nibe"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="HLS"></td><td class="empty-cell employee-column" data-branch="Elektro"></td><td class="empty-cell employee-column" data-branch=""></td></tr>
                     </tbody>
                 </table>
             </div>
@@ -664,9 +1015,54 @@ wurde auf eventuelle Verschiebungen hingewiesen</div>
         
         <script>
             // Modal Data
-            window.modalData_modal_EBD0E2E4_EB08_487C_9993_789CF0E95DFB = {"time": "08:30 - 10:30", "description": "Block   Sieberg Peter / Kunden-Nr. 13218", "location": "", "employee": "Dieter Müller", "creator": "LEONA LENK", "id": "EBD0E2E4-EB08-487C-9993-789CF0E95DFB", "all_employees": ["Dieter Müller"], "detailed_description": "WP 1\r\n\r\nper Tel best.(L)\r\nwurde auf eventuelle Verschiebungen hingewiesen"};
-window.modalData_modal_AA2209CF_6044_44AC_AF29_24E42A9457AD = {"time": "08:30 - 10:30", "description": "Weber Edith, Sponheim", "location": "55595 Sponheim Gräfin-Loretta-Straße 12", "employee": "Kurt Krechel", "creator": "MARC SCHNEIDER", "id": "AA2209CF-6044-44AC-AF29-24E42A9457AD", "all_employees": ["Kurt Krechel"], "detailed_description": "Nibe Wärmepumpen mit Emmy (Nr: 208505)\r\n\r\nWunschtermin, Fix 06.02 Marc\r\n2x verschoben (Notfall, krank)\r\nMail best. (L)"};
-window.modalData_modal_1C2F4A4C_865E_43C3_AEF7_EF01498F1C43 = {"time": "10:30 - 12:30", "description": "Block   Sieberg Peter / Kunden-Nr. 13218", "location": "", "employee": "Dieter Müller", "creator": "LEONA LENK", "id": "1C2F4A4C-865E-43C3-AEF7-EF01498F1C43", "all_employees": ["Dieter Müller"], "detailed_description": "WP 2\r\n\r\nper Tel best.(L)\r\nwurde auf eventuelle Verschiebungen hingewiesen"};
+            window.modalData_modal_0391EA56_4D02_4D46_89C1_BC577CF5F3AE = {"time": "07:30 - 17:15", "description": "Wagener", "location": "Leienkaul", "employee": "Alexander Müller", "creator": "TIMO MERTENS", "id": "0391EA56-4D02-4D46-89C1-BC577CF5F3AE", "all_employees": ["Alexander Müller", "Niklas Wild"], "detailed_description": ""};
+window.modalData_modal_B90C7F9A_DA9B_402B_B46E_949E4F95CACC = {"time": "07:30 - 17:15", "description": "GST", "location": "Kottenheim", "employee": "Arnd Welling", "creator": "TIMO MERTENS", "id": "B90C7F9A-DA9B-402B-B46E-949E4F95CACC", "all_employees": ["Arnd Welling", "Emanuel Przesang"], "detailed_description": "Anhänger"};
+window.modalData_modal_E329C935_03D6_4F86_A341_C2FE96929595 = {"time": "07:30 - 11:00", "description": "455092 Keiffenheim / Schneider Boos", "location": "Boos, Römerweg 3", "employee": "Björn Widerstein", "creator": "TIMO MERTENS", "id": "E329C935-03D6-4F86-A341-C2FE96929595", "all_employees": ["Björn Widerstein"], "detailed_description": "Schneider in Boos, Römerweg 3\r\r\nPV Anlage in Betrieb nehmen"};
+window.modalData_modal_38A7F0E3_513A_4377_BC19_EAD0917CE659 = {"time": "07:30 - 14:30", "description": "Zeitzem", "location": "Welling", "employee": "Christopher Gondorf", "creator": "TIMO MERTENS", "id": "38A7F0E3-513A-4377-BC19-EAD0917CE659", "all_employees": ["Christopher Gondorf", "Karl Hansen"], "detailed_description": "Verbindungskabel\r\nMuffen ....\r\nKabeleinführung"};
+window.modalData_modal_3ECD9B33_33D2_453A_B92C_971D49FF015D = {"time": "07:30 - 17:15", "description": "Markovic", "location": "Boos", "employee": "Dennis Ihle", "creator": "BERND ARENZ", "id": "3ECD9B33-33D2-453A-B92C-971D49FF015D", "all_employees": ["Dennis Ihle", "Nico Bodemir"], "detailed_description": ""};
+window.modalData_modal_B90C7F9A_DA9B_402B_B46E_949E4F95CACC = {"time": "07:30 - 17:15", "description": "GST", "location": "Kottenheim", "employee": "Emanuel Przesang", "creator": "TIMO MERTENS", "id": "B90C7F9A-DA9B-402B-B46E-949E4F95CACC", "all_employees": ["Arnd Welling", "Emanuel Przesang"], "detailed_description": "Anhänger"};
+window.modalData_modal_A05793F0_9D67_4545_A919_12B9621030D8 = {"time": "07:30 - 17:15", "description": "Kraus Jürgen", "location": "Hambach", "employee": "Felix Brühne", "creator": "TIMO MERTENS", "id": "A05793F0-9D67-4545-A919-12B9621030D8", "all_employees": ["Max Klein", "Felix Brühne"], "detailed_description": "S2125-16\r\nVVM320\r\nZählerschrank 2ZP in HZG Raum\r\nFI/Sicherungen und Rangierkanal aus Lager mitnehmen\r\n"};
+window.modalData_modal_373271D1_694A_48E9_BC85_C24B3EB44CAF = {"time": "07:30 - 17:15", "description": "Daniels", "location": "Köln", "employee": "Jens Schommer", "creator": "TIMO MERTENS", "id": "373271D1-694A-48E9-BC85-C24B3EB44CAF", "all_employees": ["Jens Schommer"], "detailed_description": ""};
+window.modalData_modal_8B7B72E6_0865_4D62_BDCB_F057ECD32FA9 = {"time": "07:30 - 17:15", "description": "Rückbau Wasser und Strom T13", "location": "Nürburgring", "employee": "Johannes Langenfeld", "creator": "TIMO MERTENS", "id": "8B7B72E6-0865-4D62-BDCB-F057ECD32FA9", "all_employees": ["Robin-Luca Stechert", "Johannes Langenfeld"], "detailed_description": ""};
+window.modalData_modal_38A7F0E3_513A_4377_BC19_EAD0917CE659 = {"time": "07:30 - 14:30", "description": "Zeitzem", "location": "Welling", "employee": "Karl Hansen", "creator": "TIMO MERTENS", "id": "38A7F0E3-513A-4377-BC19-EAD0917CE659", "all_employees": ["Christopher Gondorf", "Karl Hansen"], "detailed_description": "Verbindungskabel\r\nMuffen ....\r\nKabeleinführung"};
+window.modalData_modal_04E905A2_E22D_4DC0_9161_1D2171B72574 = {"time": "07:30 - 13:00", "description": "GST", "location": "Kottenheim", "employee": "Khaled Khalil ", "creator": "TIMO MERTENS", "id": "04E905A2-E22D-4DC0-9161-1D2171B72574", "all_employees": ["Karl Hansen", "Khaled Khalil "], "detailed_description": "Wallboxen"};
+window.modalData_modal_5F671811_E031_4E0E_BB63_B1529CE1BAD0 = {"time": "07:30 - 17:15", "description": "Kraus", "location": "Hambach", "employee": "Leon Zündorf", "creator": "BERND ARENZ", "id": "5F671811-E031-4E0E-BB63-B1529CE1BAD0", "all_employees": ["Leon Zündorf"], "detailed_description": ""};
+window.modalData_modal_75348D96_042E_48C6_A47F_C24DB52E2964 = {"time": "07:30 - 17:15", "description": "Kirche ", "location": "Monreal", "employee": "Lukas Wagner", "creator": "TIMO MERTENS", "id": "75348D96-042E-48C6-A47F-C24DB52E2964", "all_employees": ["Lukas Wagner", "Nico Hank"], "detailed_description": "WIS kommt ab ca. 10Uhr dazu"};
+window.modalData_modal_37572F64_BD92_4B55_8EA3_79C9776AB895 = {"time": "07:30 - 17:15", "description": "Pohl", "location": "Hellenthal", "employee": "Manuel Michels", "creator": "TIMO MERTENS", "id": "37572F64-BD92-4B55-8EA3-79C9776AB895", "all_employees": ["Manuel Michels", "Robin Ortner"], "detailed_description": "Austausch Sole"};
+window.modalData_modal_AF3B0293_A79E_40C2_BB93_0ECF047EE99F = {"time": "07:30 - 17:15", "description": "Nolden Elektro P465802", "location": "Polch", "employee": "Marius Nolden", "creator": "TIMO MERTENS", "id": "AF3B0293-A79E-40C2-BB93-0ECF047EE99F", "all_employees": ["Vladislav Mamonov", "Marius Nolden"], "detailed_description": "E-Check und Geräteprüfung\r\nNiessmann"};
+window.modalData_modal_62052506_9E0D_4642_9B4B_BE8DF418FA99 = {"time": "07:30 - 17:15", "description": "Markovic", "location": "Boos", "employee": "Max Hermeling", "creator": "BERND ARENZ", "id": "62052506-9E0D-4642-9B4B-BE8DF418FA99", "all_employees": ["Max Hermeling"], "detailed_description": "Schlüssel mitnehmen!!"};
+window.modalData_modal_A05793F0_9D67_4545_A919_12B9621030D8 = {"time": "07:30 - 17:15", "description": "Kraus Jürgen", "location": "Hambach", "employee": "Max Klein", "creator": "TIMO MERTENS", "id": "A05793F0-9D67-4545-A919-12B9621030D8", "all_employees": ["Max Klein", "Felix Brühne"], "detailed_description": "S2125-16\r\nVVM320\r\nZählerschrank 2ZP in HZG Raum\r\nFI/Sicherungen und Rangierkanal aus Lager mitnehmen\r\n"};
+window.modalData_modal_3ECD9B33_33D2_453A_B92C_971D49FF015D = {"time": "07:30 - 17:15", "description": "Markovic", "location": "Boos", "employee": "Nico Bodemir", "creator": "BERND ARENZ", "id": "3ECD9B33-33D2-453A-B92C-971D49FF015D", "all_employees": ["Dennis Ihle", "Nico Bodemir"], "detailed_description": ""};
+window.modalData_modal_3231CC3C_A8A1_419B_9BE9_CAEE48F62C56 = {"time": "07:30 - 17:15", "description": "Kirche ", "location": "Monreal", "employee": "Nico Hank", "creator": "TIMO MERTENS", "id": "3231CC3C-A8A1-419B-9BE9-CAEE48F62C56", "all_employees": ["Nico Hank", "Nico Kunz"], "detailed_description": ""};
+window.modalData_modal_3231CC3C_A8A1_419B_9BE9_CAEE48F62C56 = {"time": "07:30 - 17:15", "description": "Kirche ", "location": "Monreal", "employee": "Nico Kunz", "creator": "TIMO MERTENS", "id": "3231CC3C-A8A1-419B-9BE9-CAEE48F62C56", "all_employees": ["Nico Hank", "Nico Kunz"], "detailed_description": ""};
+window.modalData_modal_0391EA56_4D02_4D46_89C1_BC577CF5F3AE = {"time": "07:30 - 17:15", "description": "Wagener", "location": "Leienkaul", "employee": "Niklas Wild", "creator": "TIMO MERTENS", "id": "0391EA56-4D02-4D46-89C1-BC577CF5F3AE", "all_employees": ["Alexander Müller", "Niklas Wild"], "detailed_description": ""};
+window.modalData_modal_C713327F_AC59_423F_9A00_37FFF9B33939 = {"time": "07:30 - 17:15", "description": "Pohl", "location": "Hellenthal", "employee": "Philip Theisen", "creator": "BERND ARENZ", "id": "C713327F-AC59-423F-9A00-37FFF9B33939", "all_employees": ["Philip Theisen"], "detailed_description": ""};
+window.modalData_modal_37572F64_BD92_4B55_8EA3_79C9776AB895 = {"time": "07:30 - 17:15", "description": "Pohl", "location": "Hellenthal", "employee": "Robin Ortner", "creator": "TIMO MERTENS", "id": "37572F64-BD92-4B55-8EA3-79C9776AB895", "all_employees": ["Manuel Michels", "Robin Ortner"], "detailed_description": "Austausch Sole"};
+window.modalData_modal_8B7B72E6_0865_4D62_BDCB_F057ECD32FA9 = {"time": "07:30 - 17:15", "description": "Rückbau Wasser und Strom T13", "location": "Nürburgring", "employee": "Robin-Luca Stechert", "creator": "TIMO MERTENS", "id": "8B7B72E6-0865-4D62-BDCB-F057ECD32FA9", "all_employees": ["Robin-Luca Stechert", "Johannes Langenfeld"], "detailed_description": ""};
+window.modalData_modal_9013CD6C_40E3_4C2F_9266_9A97DCACA30F = {"time": "07:30 - 09:30", "description": "Rollmann", "location": "Plaidt", "employee": "Thomas Reitz", "creator": "BERND ARENZ", "id": "9013CD6C-40E3-4C2F-9266-9A97DCACA30F", "all_employees": ["Thomas Reitz"], "detailed_description": ""};
+window.modalData_modal_396D385A_8F0E_4F37_85A4_BBE18C444A4B = {"time": "07:30 - 17:15", "description": "Bouhs", "location": "Boos", "employee": "Thomas Schmidt", "creator": "BERND ARENZ", "id": "396D385A-8F0E-4F37-85A4-BBE18C444A4B", "all_employees": ["Thomas Schmidt"], "detailed_description": ""};
+window.modalData_modal_01FE3D84_1FA2_4B2F_9806_C31BCE8DE4D1 = {"time": "07:30 - 17:15", "description": "Nolden Elektro P465802", "location": "Polch", "employee": "Vladislav Mamonov", "creator": "TIMO MERTENS", "id": "01FE3D84-1FA2-4B2F-9806-C31BCE8DE4D1", "all_employees": ["Vladislav Mamonov"], "detailed_description": "E-Check und Geräteprüfung\r\nNiessmann"};
+window.modalData_modal_C2BECE19_8333_4B8D_B375_A8B0549D4DD7 = {"time": "07:30 - 17:30", "description": "Projekt 465333 Kraus Gerhard, Hambach", "location": "65582 Hambach Am Bienengarten 2", "employee": "WP Montageteam 1", "creator": "BERND WAGNER", "id": "C2BECE19-8333-4B8D-B375-A8B0549D4DD7", "all_employees": ["WP Montageteam 1"], "detailed_description": ""};
+window.modalData_modal_EBD0E2E4_EB08_487C_9993_789CF0E95DFB = {"time": "08:30 - 10:30", "description": "Sieberg Peter und Claudia Miethaus", "location": "53359 Rheinbach-Flerzheim Konrad Adenauer Str. 7a", "employee": "Thomas Schäfer", "creator": "LEONA LENK", "id": "EBD0E2E4-EB08-487C-9993-789CF0E95DFB", "all_employees": ["Thomas Schäfer"], "detailed_description": "Nibe Wärmepumpen mit Emmy (Nr: 208088)\r\n\r\nTel. best. (L)\r\nwurde auf eventuelle Verschiebungen hingewiesen"};
+window.modalData_modal_952A9900_4C2C_4457_BFC8_D237CA0DC7BF = {"time": "09:00 - 11:30", "description": "Filusch Angelika, Hövels", "location": "57537 Hövels Zum Siegblick 7", "employee": "Burkhard Schüller", "creator": "MARC SCHNEIDER", "id": "952A9900-4C2C-4457-BFC8-D237CA0DC7BF", "all_employees": ["Burkhard Schüller"], "detailed_description": "Nibe Wärmepumpen mit Emmy (Nr: 209406)\r\n+ Lüftung im Schlafzimmer macht Geräusche\r\nFiltertausch"};
+window.modalData_modal_AA2209CF_6044_44AC_AF29_24E42A9457AD = {"time": "09:00 - 11:00", "description": "Weber Edith, Sponheim", "location": "55595 Sponheim Gräfin-Loretta-Straße 12", "employee": "Dieter Müller", "creator": "MARC SCHNEIDER", "id": "AA2209CF-6044-44AC-AF29-24E42A9457AD", "all_employees": ["Dieter Müller"], "detailed_description": "Nibe Wärmepumpen mit Emmy (Nr: 208505)\r\n\r\nWunschtermin, Fix 06.02 Marc\r\n2x verschoben (Notfall, krank)\r\nMail best. (L)"};
+window.modalData_modal_8CE9FF3A_0B51_4802_9596_12B549035A94 = {"time": "09:00 - 11:30", "description": "Kröger Inge u. Dirk, Hennef", "location": "53773  Hennef Im Baumgarten 48", "employee": "Kurt Krechel", "creator": "MARC SCHNEIDER", "id": "8CE9FF3A-0B51-4802-9596-12B549035A94", "all_employees": ["Kurt Krechel"], "detailed_description": "Nibe \r\n\r\nErs. auf Kommi \r\nMail best. "};
+window.modalData_modal_9121B1A9_18D4_4D8D_867F_568D5A66BC7D = {"time": "09:30 - 11:30", "description": "Keiffenheim Josi", "location": "", "employee": "Thomas Reitz", "creator": "BERND ARENZ", "id": "9121B1A9-18D4-4D8D-867F-568D5A66BC7D", "all_employees": ["Thomas Reitz"], "detailed_description": "01712677575\r\n\r\nWMZ + HK überprüfen"};
+window.modalData_modal_1C2F4A4C_865E_43C3_AEF7_EF01498F1C43 = {"time": "10:30 - 12:30", "description": "Sieberg Peter und Claudia", "location": "53359 Rheinbach-Flerzheim Konrad Adenauer Str. 7a", "employee": "Thomas Schäfer", "creator": "LEONA LENK", "id": "1C2F4A4C-865E-43C3-AEF7-EF01498F1C43", "all_employees": ["Thomas Schäfer"], "detailed_description": "Nibe Wärmepumpen mit Emmy (Nr: 208088)\r\n\r\nTel. best. (L)\r\nwurde auf eventuelle Verschiebungen hingewiesen"};
+window.modalData_modal_20E768B0_F50F_4D29_A166_A6E9F7CF8B0D = {"time": "11:00 - 12:00", "description": "Becker Lucas, Allenfeld", "location": "55595 Allenfeld Auf dem Dillenberg 30", "employee": "Dieter Müller", "creator": "MARC SCHNEIDER", "id": "20E768B0-F50F-4D29-A166-A6E9F7CF8B0D", "all_employees": ["Dieter Müller"], "detailed_description": "Nibe Wärmepumpen mit Emmy (Nr: 208580)\r\n\r\nMail best."};
+window.modalData_modal_F95FA511_64B4_4AB8_8D7D_B9A4590439B3 = {"time": "11:30 - 14:30", "description": "425489 Krankenhaus Mayen", "location": "Mayen Block A", "employee": "Björn Widerstein", "creator": "TIMO MERTENS", "id": "F95FA511-64B4-4AB8-8D7D-B9A4590439B3", "all_employees": ["Björn Widerstein"], "detailed_description": "Gehwegs Beleuchtung Block A\r\n\rEin Kabel muss eventuell verlängert werden."};
+window.modalData_modal_3427CCA4_C0B2_4B8B_926E_94781655033D = {"time": "12:00 - 14:00", "description": "Dörner", "location": "Kürrenberg", "employee": "Thomas Reitz", "creator": "MANUELA WERNER", "id": "3427CCA4-C0B2-4B8B-926E-94781655033D", "all_employees": ["Thomas Reitz"], "detailed_description": "IBN\r\nAuftrag hat Thomas bereis"};
+window.modalData_modal_5B8BC4EC_1A4F_41E3_819E_3D52F9DD5D4B = {"time": "12:30 - 14:30", "description": "Klohe Carsten, Neustadt", "location": "53577 Neustadt Heuweg 20", "employee": "Burkhard Schüller", "creator": "DANIELA WÄHR", "id": "5B8BC4EC-1A4F-41E3-819E-3D52F9DD5D4B", "all_employees": ["Burkhard Schüller"], "detailed_description": "Nibe \r\n/05.11.25/dw\r\nSchlüsselbox, neben der Garage lins seitenwand:\r\n2406 - > Keller 1. Tür Rechts HWR\r\n12-13 Uhr"};
+window.modalData_modal_F57A0F84_2843_4D1C_AF25_70DB1FB40185 = {"time": "12:30 - 15:30", "description": "Stein Frederic und Michaela, Nieder-Olm", "location": "55268 Nieder Olm Leherweg 2", "employee": "Dieter Müller", "creator": "DANIELA WÄHR", "id": "F57A0F84-2843-4D1C-AF25-70DB1FB40185", "all_employees": ["Dieter Müller"], "detailed_description": "Nibe Split / KG (Nr: 200839)\r\nTermin tel.vereinbart / 06.11.25/dw\r\n+ Kälteiso mitnehmen, Erneuerung Außendämmung"};
+window.modalData_modal_4D88448D_24EA_4DEB_853A_A08D1FFA191D = {"time": "12:30 - 17:15", "description": "445442 Thyssenkrupp Bilstein GmbH", "location": "53520  Meuspath August-Bilstein-Rondell 1", "employee": "Johannes Langenfeld", "creator": "TIM GÖRGEN", "id": "4D88448D-24EA-4DEB-853A-A08D1FFA191D", "all_employees": ["Robin-Luca Stechert", "Johannes Langenfeld"], "detailed_description": ""};
+window.modalData_modal_D25956CC_E5AD_44F5_AE18_1354F3202BE8 = {"time": "12:30 - 16:00", "description": "Beils Thomas", "location": "50767 Köln Orrer Weg 61", "employee": "Kurt Krechel", "creator": "MARC SCHNEIDER", "id": "D25956CC-E5AD-44F5-AE18-1354F3202BE8", "all_employees": ["Kurt Krechel"], "detailed_description": "Nibe \r\nMail best.\r\n\r\nDiv. Ers. gem Angebot auf Kommi / Verm. nur Display"};
+window.modalData_modal_4D88448D_24EA_4DEB_853A_A08D1FFA191D = {"time": "12:30 - 17:15", "description": "445442 Thyssenkrupp Bilstein GmbH", "location": "53520  Meuspath August-Bilstein-Rondell 1", "employee": "Robin-Luca Stechert", "creator": "TIM GÖRGEN", "id": "4D88448D-24EA-4DEB-853A-A08D1FFA191D", "all_employees": ["Robin-Luca Stechert", "Johannes Langenfeld"], "detailed_description": ""};
+window.modalData_modal_ADE57B07_482B_4A5D_96D5_993BDE70EF74 = {"time": "13:30 - 15:30", "description": "Buchholz Amelie & Bertram Martin, Dernau", "location": "53507 Dernau Bungertstraße 26", "employee": "Thomas Schäfer", "creator": "MARC SCHNEIDER", "id": "ADE57B07-482B-4A5D-96D5-993BDE70EF74", "all_employees": ["Thomas Schäfer"], "detailed_description": "Nibe Wärmepumpen mit Emmy (Nr: 209557)"};
+window.modalData_modal_A51DD8BF_C8A8_4951_803A_99A364A587AA = {"time": "14:00 - 15:00", "description": "425118 Steffens Matthias Luxem", "location": "56729 Luxem Im Suhr 8", "employee": "Thomas Reitz", "creator": "MANUELA WERNER", "id": "A51DD8BF-C8A8-4951-803A-99A364A587AA", "all_employees": ["Thomas Reitz"], "detailed_description": ""};
+window.modalData_modal_8F376522_ADE0_4210_9D86_8C291B35ECA9 = {"time": "14:30 - 17:30", "description": "GST", "location": "Kottenheim", "employee": "Christopher Gondorf", "creator": "TIMO MERTENS", "id": "8F376522-ADE0-4210-9D86-8C291B35ECA9", "all_employees": ["Karl Hansen", "Christopher Gondorf"], "detailed_description": "Wallboxen"};
+window.modalData_modal_8F376522_ADE0_4210_9D86_8C291B35ECA9 = {"time": "14:30 - 17:30", "description": "GST", "location": "Kottenheim", "employee": "Karl Hansen", "creator": "TIMO MERTENS", "id": "8F376522-ADE0-4210-9D86-8C291B35ECA9", "all_employees": ["Karl Hansen", "Christopher Gondorf"], "detailed_description": "Wallboxen"};
+window.modalData_modal_C7EDADA7_9627_4B45_8467_679ED60B9F8D = {"time": "15:00 - 17:00", "description": "Protokolle", "location": "", "employee": "Björn Widerstein", "creator": "TIMO MERTENS", "id": "C7EDADA7-9627-4B45-8467-679ED60B9F8D", "all_employees": ["Björn Widerstein"], "detailed_description": ""};
+window.modalData_modal_9903F030_039D_419F_ACBD_2C1A267A0019 = {"time": "15:00 - 16:30", "description": "Simon Michael, Monreal", "location": "56729 Monreal Am Hochkreuz 25", "employee": "Burkhard Schüller", "creator": "DANIELA WÄHR", "id": "9903F030-039D-419F-ACBD-2C1A267A0019", "all_employees": ["Burkhard Schüller"], "detailed_description": "Nibe Wärmepumpen mit Emmy (Nr: 207220)\r\nTermin tel. bestätigt/ 07.11.25/dw"};
             
             let currentDate = '2025-11-11';
             
