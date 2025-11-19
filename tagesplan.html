@@ -660,7 +660,7 @@
                     <div>
                         <h1>GST Tagesplanung</h1>
                         <div class="date-info">Mittwoch, 19. November 2025</div>
-                        <div class="update-info">Aktualisiert: 14:38 Uhr</div>
+                        <div class="update-info">Aktualisiert: 14:42 Uhr</div>
                     </div>
                 </div>
                 <div class="header-right">
@@ -2484,7 +2484,10 @@ window.modalData_modal_39144C3B_F98A_4CC1_8CD7_1DC04E5E3DB3 = {"time": "16:30 - 
                         const branch = header.getAttribute('data-branch') || '';
                         const columnIndex = index + 1; // +1 wegen Zeit-Spalte
                         
-                        if (selectedBranch === '' || branch === selectedBranch || branch === '') {
+                        // Zeige Spalte nur wenn:
+                        // 1. "Alle Branchen" ausgewählt (selectedBranch === '')
+                        // 2. Branche passt (branch === selectedBranch)
+                        if (selectedBranch === '' || branch === selectedBranch) {
                             header.style.display = '';
                             visibleColumnIndices.add(columnIndex);
                             console.log(`Header ${columnIndex} sichtbar: ${header.textContent} (Branche: ${branch})`);
